@@ -1,0 +1,14 @@
+{
+  "id": "core.workshop",
+  "kind": "building",
+  "zone": "industrial",
+  "density": 1,
+  "size": [1, 1],
+  "cost": 60,
+  "upkeep": 1,
+  "needs": [],
+  "provides": { "jobs": 4 },
+  "sprite": "ind_workshop",
+  "color": "#b38653",
+  "tags": ["low_density"]
+}

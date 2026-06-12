@@ -1,0 +1,20 @@
+{
+  "id": "core",
+  "version": "0.1.0",
+  "name": "Core Content",
+  "description": "Base content pack shipped with City Builder V1.",
+  "loadOrder": 0,
+  "requires": [],
+  "entries": {
+    "zones": ["dwellings", "trade", "works"],
+    "buildings": [
+      "cottage",
+      "rowhouse",
+      "corner_shop",
+      "market_hall",
+      "workshop",
+      "small_factory"
+    ],
+    "balance": "balance.json"
+  }
+}

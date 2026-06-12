@@ -1,0 +1,14 @@
+{
+  "id": "example.stately_dwelling",
+  "kind": "building",
+  "zone": "residential",
+  "density": 2,
+  "size": [1, 1],
+  "cost": 160,
+  "upkeep": 3,
+  "needs": ["power", "water"],
+  "provides": { "housing": 16 },
+  "sprite": "res_stately",
+  "color": "#a9d5b9",
+  "tags": ["low_density", "example"]
+}

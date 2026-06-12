@@ -1,0 +1,40 @@
+{
+  "name": "realm-conquest",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Realm Conquest — a fully playable 3D real-time strategy game in the browser (Three.js).",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:web": "vite",
+    "build": "vite build",
+    "build:web": "vite build",
+    "preview": "vite preview",
+    "smoke": "node scripts/smoke.mjs",
+    "screenshot": "node scripts/screenshot.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/three": "^0.184.1",
+    "pixi.js": "^8.6.6",
+    "three": "^0.184.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "concurrently": "^9.1.2",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "eslint": "^8.57.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8",
+    "wait-on": "^8.0.1"
+  }
+}

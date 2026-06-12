@@ -1,0 +1,16 @@
+{
+  "economy": {
+    "startingTreasury": 5000,
+    "roadUpkeepPerTile": 1,
+    "taxRateResidential": 2,
+    "taxRateCommercial": 3,
+    "taxRateIndustrial": 3,
+    "roadCostPerTile": 5
+  },
+  "milestones": {
+    "tierPopulationThresholds": [0, 50, 250, 1000, 5000]
+  },
+  "growth": {
+    "samplesPerTick": 48
+  }
+}

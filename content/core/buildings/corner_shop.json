@@ -1,0 +1,14 @@
+{
+  "id": "core.corner_shop",
+  "kind": "building",
+  "zone": "commercial",
+  "density": 1,
+  "size": [1, 1],
+  "cost": 55,
+  "upkeep": 1,
+  "needs": [],
+  "provides": { "jobs": 3 },
+  "sprite": "com_corner_shop",
+  "color": "#5585c2",
+  "tags": ["low_density"]
+}

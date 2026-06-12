@@ -1,0 +1,8 @@
+{
+  "id": "core.dwellings",
+  "kind": "zone",
+  "zone": "residential",
+  "label": "Dwellings",
+  "color": "#4f8a6b",
+  "allows": ["core.cottage", "core.rowhouse"]
+}

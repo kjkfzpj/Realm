@@ -1,0 +1,14 @@
+{
+  "id": "core.rowhouse",
+  "kind": "building",
+  "zone": "residential",
+  "density": 2,
+  "size": [1, 1],
+  "cost": 90,
+  "upkeep": 2,
+  "needs": ["power", "water"],
+  "provides": { "housing": 10 },
+  "sprite": "res_rowhouse",
+  "color": "#87c59a",
+  "tags": ["low_density"]
+}

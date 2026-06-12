@@ -1,0 +1,14 @@
+{
+  "id": "core.cottage",
+  "kind": "building",
+  "zone": "residential",
+  "density": 1,
+  "size": [1, 1],
+  "cost": 40,
+  "upkeep": 1,
+  "needs": [],
+  "provides": { "housing": 4 },
+  "sprite": "res_cottage",
+  "color": "#6fae87",
+  "tags": ["low_density"]
+}

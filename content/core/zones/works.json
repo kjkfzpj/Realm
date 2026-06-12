@@ -1,0 +1,8 @@
+{
+  "id": "core.works",
+  "kind": "zone",
+  "zone": "industrial",
+  "label": "Works",
+  "color": "#a07040",
+  "allows": ["core.workshop", "core.small_factory"]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "core.market_hall",
+  "kind": "building",
+  "zone": "commercial",
+  "density": 2,
+  "size": [1, 1],
+  "cost": 110,
+  "upkeep": 2,
+  "needs": ["power", "water"],
+  "provides": { "jobs": 8 },
+  "sprite": "com_market_hall",
+  "color": "#6fa0d2",
+  "tags": ["medium_density"]
+}

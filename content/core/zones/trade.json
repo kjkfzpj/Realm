@@ -1,0 +1,8 @@
+{
+  "id": "core.trade",
+  "kind": "zone",
+  "zone": "commercial",
+  "label": "Trade",
+  "color": "#3a6ea5",
+  "allows": ["core.corner_shop", "core.market_hall"]
+}

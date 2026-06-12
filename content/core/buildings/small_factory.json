@@ -1,0 +1,14 @@
+{
+  "id": "core.small_factory",
+  "kind": "building",
+  "zone": "industrial",
+  "density": 2,
+  "size": [1, 1],
+  "cost": 120,
+  "upkeep": 3,
+  "needs": ["power", "water"],
+  "provides": { "jobs": 10 },
+  "sprite": "ind_small_factory",
+  "color": "#c49966",
+  "tags": ["medium_density"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "example",
+  "version": "0.1.0",
+  "name": "Example Mod",
+  "description": "Adds a more expensive high-yield dwelling to demonstrate mod loading.",
+  "loadOrder": 10,
+  "requires": ["core"],
+  "entries": {
+    "zones": [],
+    "buildings": ["stately_dwelling"]
+  }
+}
