@@ -57,9 +57,9 @@ npm run preview      # serve the built bundle
 ## Play on the web / iPad
 
 The game is a static site, so it deploys to **GitHub Pages** via
-`.github/workflows/deploy.yml`. The workflow enables Pages on its first run
-(source: GitHub Actions) — no manual setup needed. Every push to `main`
-redeploys and the game is live at:
+`.github/workflows/deploy.yml`, which builds the bundle and pushes it to the
+`gh-pages` branch — no manual setup needed. Every push to `main` redeploys
+and the game is live at:
 
 ```
 https://kjkfzpj.github.io/Realm/

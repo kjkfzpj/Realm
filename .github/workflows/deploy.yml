@@ -1,10 +1,10 @@
-# Builds the Vite bundle and publishes it to GitHub Pages so the game is
-# playable from any device (including an iPad) at the repository's Pages URL.
+# Builds the Vite bundle and publishes it to the gh-pages branch, which
+# GitHub Pages serves automatically — no repository settings required
+# (the GITHUB_TOKEN cannot enable the "GitHub Actions" Pages source on
+# this repo, so we deploy the classic branch-based way instead).
 #
-# The configure-pages step enables Pages (source: GitHub Actions) on first
-# run, so no manual repository settings are needed. Every push to main
-# redeploys automatically; you can also run it manually from the Actions tab
-# ("Run workflow").
+# Every push to main redeploys; you can also run it manually from the
+# Actions tab ("Run workflow").
 name: Deploy to GitHub Pages
 
 on:
@@ -14,9 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 # Allow only one concurrent deployment; let in-progress runs finish.
 concurrency:
@@ -24,29 +22,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - run: touch dist/.nojekyll
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
